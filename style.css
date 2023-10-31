@@ -20,6 +20,18 @@ body {
     background-color: green;
     font-family: "Comic Sans MS";
 }
-p {
+
+.header__item {
+    width: 300px;
+    min-height: 10px;
+    display: flex;
+    background-color: black;
+    vertical-align: center;
+    display: inline-flex;
     
+}
+
+
+
+
 }
