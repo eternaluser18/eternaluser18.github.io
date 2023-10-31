@@ -1,4 +1,20 @@
+
+
 body {
     background-color: black;
     color: white;
+    margin: 0px;
+    padding-top: -10px;
+}
+.container {
+    background-color: red;
+    
+}
+.header {
+    
+    background-color: green;
+    font-family: "Comic Sans MS";
+}
+p {
+    
 }
