@@ -4,10 +4,15 @@ body {
     background-color: black;
     color: white;
     margin: 0px;
-    padding-top: -10px;
+    padding: 0px;
+    background: url("images/123.jpg");
+    background-size: cover;
+    
 }
 .container {
-    background-color: red;
+    
+    width: 100%;
+    min-height: 100px;
     
 }
 .header {
