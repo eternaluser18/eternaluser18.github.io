@@ -50,11 +50,13 @@ body {
     color: #f5f2f4;
     
 }
-.omg {
-    color: white;
+
+
+#omg {
+    display: block;
+    transition: opacity .2s linear;
+    
 }
-
-
 
 
 
