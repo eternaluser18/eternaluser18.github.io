@@ -1,10 +1,10 @@
 function func() {
     var ok = window.getComputedStyle(document.getElementById("omg"), null).display;
-    if(ok === "block") {
-    document.getElementById("omg").style.display = "none"; 
+    if(document.getElementById("omg").classList.contains('active')) {
+    document.getElementById("omg").classList.remove('active');
     }
-    if(ok === "none") {
-    document.getElementById("omg").style.display = "block"; 
+    else {
+    document.getElementById("omg").classList.add('active');
     }
-    alert(ok)
+    
 }
