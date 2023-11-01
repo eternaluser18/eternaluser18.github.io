@@ -55,6 +55,7 @@ body {
 #omg {
     display: block;
     transition: opacity .2s linear;
+    opacity: 100%;
     
 }
 
