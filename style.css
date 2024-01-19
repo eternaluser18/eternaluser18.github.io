@@ -4,13 +4,17 @@ body {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    
+    font-family: Tahoma, sans-serif;
     
     
 }
 h2 {
     font-size: 50px;
     
+}
+h3 {
+    font-size: 30px;
+    font-weight: 540;
 }
 ul {
     list-style: none;
@@ -37,6 +41,8 @@ li {
     
 }
 .header {
+    padding-top: 10px;
+    padding-Bottom: 20px;
     position: absolute;
     width: 70%;
     background-color: black;
@@ -93,7 +99,7 @@ li {
     
 }
 #content_helper {
-    height: 60px;
+    height: 90px;
 }
 .content {
     background-color: black;
