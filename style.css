@@ -1,11 +1,11 @@
 
 
 body {
-    background-color: black;
+    background-color: white;
     margin: 0px;
     padding: 0px;
-    background: url("images/123.jpg");
-    background-size: cover;
+    
+    
     
 }
 h2 {
@@ -39,7 +39,7 @@ li {
 .header {
     position: absolute;
     width: 70%;
-    background-color: green;
+    background-color: black;
     font-family: "Comic Sans MS";
     display: flex;
     flex-direction: row;
@@ -96,7 +96,8 @@ li {
     height: 60px;
 }
 .content {
-    background-color: red;
+    background-color: black;
+    color: white;
     width: 100%;
     
     text-align: center;
