@@ -5,7 +5,8 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: Tahoma, sans-serif;
-    
+    height: 100%;
+   overflow-y: hidden;
     
 }
 h2 {
@@ -50,19 +51,35 @@ li {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
+    
+    
+}
+
+.header2 {
+    padding-top: 10px;
+    padding-Bottom: 10px;
+    
+    width: 70%;
+    background-color: black;
+    font-family: "Comic Sans MS";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
     
 }
 
 .header__item {
-    
     margin: auto;
     width: 200px;
     min-width: 20%;
-    
-    
-    
-    
+
+}
+
+.header_item2 {
+    width: 170px;
+    min-width: 18%;
+
 }
 
 .btn {
@@ -82,6 +99,25 @@ li {
     transition: background-color .2s linear, color .2s linear;
     
 }
+
+.btn_p {
+    margin: auto;
+    width: 90%;
+    height: 5%;
+    min-width: 12%;
+    min-height: 50px;
+    max-height: 80px;
+    border-radius: 20px;
+    border: 5px solid black;
+    font-family: "Comic Sans MS";
+    font-size: 2vw;
+    
+    font-weight: 900;
+    text-decoration: none;
+    transition: background-color .2s linear, color .2s linear;
+    
+}
+
 .icon {
     height: 90px;
     width: 90px;
@@ -98,11 +134,13 @@ li {
     
     filter: invert(100%);
 }
-.btn:hover {
+.btn:hover, .btn_p:hover {
     background-color: black;
     color: #f5f2f4;
     
 }
+
+
 #content_helper {
     height: 90px;
     min-height: 90px;
@@ -113,7 +151,7 @@ li {
     width: 100%;
     
     text-align: center;
-    padding-top: 60px;
+    padding-top: 10px;
 }
 
 .links {
@@ -138,6 +176,8 @@ li {
     
     
 }
+
+
 
 #omg2.active {
     display: block;
@@ -179,9 +219,35 @@ li {
   }
 }
 
+/* SNAKE   */
 
+#board {
+    border: 5px solid white;
+    margin-bottom: 30px;
+    
+}
+.white_text {
+    color: white;
+}
 
+#snake_w.active {
+    display: block;
+    animation: fade_in_show 1s;
+    opacity: 1;
+    
+}
 
+#snake_w {
+    display: none;
+    opacity: 0;
+    animation: hide .2s;
+    
+    
+}
+.snake_instr {
+    position:absolute;
+    width: 15%;
+}
 
 
 
