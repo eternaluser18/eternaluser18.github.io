@@ -1,67 +1,79 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+
+    <head>
     
-    <script src="script.js"></script> 
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script> 
     </head>
+    
     <body>
         <div class = "MAIN_CONTAINER">
             <div class = "MENU"> 
-                <div class = "header__item"><button onclick="func()" class="btn">About me</button></div>
-                
-                <div class = "header__item"> <button onclick="func2()" class="btn">Projects</button></div>
-                
-                
-                
-                
+                <div class = "MENU_ITEM"><button onclick="change_visibility_aboutme()" class="MENU_BUTTON">About me</button></div>
+                <div class = "MENU_ITEM"> <button onclick="change_visibility_projects()" class="MENU_BUTTON">Projects</button></div> 
             </div>
-            <div id="content_helper"></div>
-            <div id="omg" class ="content">
-            
-            <h2>Volodymyr Kriukov</h2>
-            <h3>Computer Programmer</h3>
-                <ul>
-                    <li><a href="https://github.com/eternaluser18" title="GitHub"><button class="icon"><img src="images/github_icon.png" alt="GitHub" width="50" height="50"></button></a></li>    
-                    <li><a href="https://t.me/fubar_work" title="Telegram"><button class="icon"><img src="images/telegram_icon.png" width="50" height="50"></button></a></li>
-                    <li><a href="mailto:wlodzimierzkrk@gmail.com" title="Email"><button class="icon"><img src="images/mail_icon.png" width="50" height="50"></button></a></li>
-                    <li><a href="https://www.linkedin.com/in/kriukov-v/" title="LinkedIn"><button class="icon"><img src="images/linkedin_icon.png" width="50" height="50"></button></a></li>
-                    <li><a href="https://drive.google.com/file/d/1nTUndoWSx4J_jOWZPIWqZrzGl5B2O-Io/view?usp=sharing" title="CV"><button class="icon"><img src="images/document_icon.png" width="50" height="50"></button></a></li>
-                
-                
-                
-                </ul>
-            
-                
-                
+            <div id="CONTENT_INVINCIBLE_BLOCK"></div>
+            <div id="ABOUTME_ID" class ="CONTENT_BLOCK">
+                <h2>Volodymyr Kriukov</h2>
+                <h3>Computer Programmer</h3>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/eternaluser18" title="GitHub">
+                                <button class="ICON">
+                                    <img src="images/github_icon.png" alt="GitHub" width="50" height="50">
+                                </button>
+                            </a>
+                        </li>    
+                        <li>
+                            <a href="https://t.me/fubar_work" title="Telegram">
+                                <button class="ICON">
+                                    <img src="images/telegram_icon.png" width="50" height="50">
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:wlodzimierzkrk@gmail.com" title="Email">
+                                <button class="ICON">
+                                    <img src="images/mail_icon.png" width="50" height="50">
+                                </button>
+                            </a>
+                        </li>
+                        <li><a href="https://www.linkedin.com/in/kriukov-v/" title="LinkedIn">
+                            <button class="ICON">
+                                <img src="images/linkedin_icon.png" width="50" height="50">
+                            </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1nTUndoWSx4J_jOWZPIWqZrzGl5B2O-Io/view?usp=sharing" title="CV">
+                                <button class="ICON">
+                                    <img src="images/document_icon.png" width="50" height="50">
+                                </button>
+                            </a>
+                        </li>
+                    </ul> 
             </div>
-            <div id="omg2" class ="content">
-            <div class = "header2"> 
-                <div class = "header_item2"><button onclick="show_snake()" class="btn_p">Snake</button></div>
-                
-                
-                
-                
-                
-                
-            </div>
+            <div id="PROJECTS_ID" class ="CONTENT_BLOCK">
+                <div class = "PROJECTS_LIST"> 
+                    <div class = "PROJECTS_LIST_ITEM"><button onclick="change_visibility_snake()" class="PROJECTS_LIST_BUTTON">Snake</button></div>    
+                </div>
             
-            <div id="snake_w">
-            <h1 class="white_text">Snake <span id="Points"></span></h1>
-            <p class="snake_instr">
-                Space - stopgame<br>
-                LeftArrow - left<br>
-                RightArrow - right<br>
-                DownArrow - down<br>
-                UpArrow - up<br>
+                <div id="SNAKE_WINDOW">
+                <h1>Snake <span id="Points"></span></h1>
+                <p class="SNAKE_INSTRUCTION">
+                    Space - stopgame<br>
+                    LeftArrow - left<br>
+                    RightArrow - right<br>
+                    DownArrow - down<br>
+                    UpArrow - up<br>
                 </p>
             
-            <canvas id="board"></canvas>
-            </div>    
+                <canvas id="SNAKE_BOARD"></canvas>
+                </div>    
                 
-            </div>
-            
+            </div> 
         </div>
     </body>
 </html>
