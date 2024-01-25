@@ -1,4 +1,4 @@
-
+/*      COMMON SECTION              */
 
 body {
     background-color: white;
@@ -33,7 +33,10 @@ li {
     width: 90px;
     margin: 50px;
 }
-.container {
+
+/*      MAIN SECTION            */
+
+.MAIN_CONTAINER {
     
     
     min-height: 100px;
@@ -41,7 +44,7 @@ li {
     margin-right: 15%;
     
 }
-.header {
+.MENU {
     padding-top: 10px;
     padding-Bottom: 20px;
     position: absolute;

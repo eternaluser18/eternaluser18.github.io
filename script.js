@@ -60,6 +60,8 @@ var snakeBody = [];
 //food
 
 
+
+
 window.onload = function(){
     board = document.getElementById("board");
     board.height = rows * blockSize;
@@ -68,6 +70,7 @@ window.onload = function(){
     
     
     placeFood();
+    
     document.addEventListener("keyup", changeDirection);
     
     setInterval(update, 1000/5);
@@ -103,6 +106,7 @@ function update() {
         snakeBody.push([foodX, foodY]);
         
         placeFood();
+        
     }
     
     for (let i = snakeBody.length-1; i > 0; i--){
@@ -144,7 +148,7 @@ function changeDirection(e) {
         velocityX = 0;
         velocityY = -1;
     }
-    else if(e.code == "ArrowDown" && velocityY != 1) {
+    else if(e.code == "ArrowDown" && velocityY != -1) {
         velocityX = 0;
         velocityY = 1;
     }
@@ -163,10 +167,34 @@ function changeDirection(e) {
 }
 
 function placeFood() {
-    foodX = Math.floor(Math.random()* cols) * blockSize;
-    foodY = Math.floor(Math.random() * rows) * blockSize;
+    
+    var pair = getRandomPairsExcluding(snakeBody);
+    foodX = pair[0];
+    foodY = pair[1];
+        
+    
     points++;
     document.getElementById("Points").innerHTML = points;
+
+    
 }
 
+function getRandomPairsExcluding(excludedPairs) {
+  
 
+  function isPairExcluded(pair) {
+    return excludedPairs.some(excludedPair =>
+      (excludedPair[0] === pair[0] && excludedPair[1] === pair[1])
+    );
+  }
+
+  while (1) {
+    var pair = [Math.floor(Math.random()* cols) * blockSize, Math.floor(Math.random() * rows) * blockSize];
+
+    if (!isPairExcluded(pair)) {
+      return pair;
+    }
+  }
+
+  
+}
