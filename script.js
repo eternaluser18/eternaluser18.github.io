@@ -1,7 +1,6 @@
 ////////        MAIN FUNCTIONS          ///////////////            
 
 function change_visibility_aboutme() {
-    var ok = window.getComputedStyle(document.getElementById("ABOUTME_ID"), null).display;
     if(document.getElementById("ABOUTME_ID").classList.contains('active')) {
     document.getElementById("ABOUTME_ID").classList.remove('active');
     }
@@ -14,8 +13,6 @@ function change_visibility_aboutme() {
 }
 
 function change_visibility_snake() {
-    
-    var ok = window.getComputedStyle(document.getElementById("SNAKE_WINDOW"), null).display;
     if(document.getElementById("SNAKE_WINDOW").classList.contains('active')) {
     document.getElementById("SNAKE_WINDOW").classList.remove('active');
     document.getElementsByTagName("body")[0].style = "overflow: visible";
@@ -31,7 +28,6 @@ function change_visibility_snake() {
 }
 
 function change_visibility_projects() {
-    var ok = window.getComputedStyle(document.getElementById("PROJECTS_ID"), null).display;
     if(document.getElementById("PROJECTS_ID").classList.contains('active')) {
     document.getElementById("PROJECTS_ID").classList.remove('active');
     }
