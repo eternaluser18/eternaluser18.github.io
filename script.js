@@ -1,6 +1,7 @@
 ////////        MAIN FUNCTIONS          ///////////////            
 
 function change_visibility_aboutme() {
+    
     if(document.getElementById("ABOUTME_ID").classList.contains('active')) {
     document.getElementById("ABOUTME_ID").classList.remove('active');
     }
@@ -127,7 +128,7 @@ function SNAKE_update() {
             SNAKE_restart();
             window.alert("game over");
         }
-        context.fillRect(SNAKE_Body[i][0], SNAKE_Body[i][1], SNAKE_blockSize, SNAKE_blockSize);
+        SNAKE_context.fillRect(SNAKE_Body[i][0], SNAKE_Body[i][1], SNAKE_blockSize, SNAKE_blockSize);
     }
     
     
