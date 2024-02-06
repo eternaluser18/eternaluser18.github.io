@@ -27,6 +27,17 @@ function change_visibility_snake() {
     }
     
 }
+function change_visibility_chests() {
+    if(document.getElementById("CHESTS_WINDOW").classList.contains('active')) {
+    document.getElementById("CHESTS_WINDOW").classList.remove('active');
+    }
+    else {
+        
+        document.getElementById("SNAKE_WINDOW").classList.remove('active');
+        setTimeout(() => {  document.getElementById("CHESTS_WINDOW").classList.add('active'); }, 200);  
+    }
+    
+}
 
 function change_visibility_projects() {
     if(document.getElementById("PROJECTS_ID").classList.contains('active')) {

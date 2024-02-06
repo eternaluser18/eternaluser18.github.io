@@ -245,7 +245,20 @@ li {
     position:absolute;
     width: 15%;
 }
+/*          CHESTS        */
+#CHESTS_WINDOW.active {
+    display: block;
+    animation: fade_in_show 1s;
+    opacity: 1;
+    
+}
 
-
+#CHESTS_WINDOW {
+    display: none;
+    opacity: 0;
+    animation: hide .2s;
+    padding: 50px;
+    text-align: left;
+}
 
 
